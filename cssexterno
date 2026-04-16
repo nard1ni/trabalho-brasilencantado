@@ -1,12 +1,12 @@
-/* ========================================
+   ========================================
    BRASIL ENCANTADO — CSS EXTERNO
    style.css
-   ======================================== */
+   ======================================== 
 
-/* === FONTS === */
+=== FONTS ===
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Nunito:wght@300;400;600;700&display=swap');
 
-/* === VARIÁVEIS === */
+=== VARIÁVEIS ===
 :root {
   --verde: #1a6b3a;
   --verde-claro: #2d9e5f;
@@ -27,7 +27,7 @@
   --fonte-corpo: 'Nunito', Arial, sans-serif;
 }
 
-/* === RESET === */
+ === RESET ===
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -61,7 +61,7 @@ ul {
   list-style: none;
 }
 
-/* === HEADER === */
+=== HEADER ===
 header {
   background-color: var(--verde);
   padding: 0 40px;
@@ -108,7 +108,7 @@ header {
   text-transform: uppercase;
 }
 
-/* === NAV === */
+ === NAV ===
 nav ul {
   display: flex;
   gap: 6px;
@@ -136,12 +136,12 @@ nav ul li a.ativo {
   font-weight: 700;
 }
 
-/* === MAIN === */
+ === MAIN === 
 main {
   min-height: 70vh;
 }
 
-/* === HERO === */
+ === HERO === 
 .hero {
   position: relative;
   height: 90vh;
@@ -254,14 +254,14 @@ main {
   background-color: rgba(255,255,255,0.1);
 }
 
-/* === CONTAINER === */
+ === CONTAINER === 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
-/* === SECTION GERAL === */
+ === SECTION GERAL === 
 section {
   padding: 80px 0;
 }
@@ -285,7 +285,7 @@ section {
   margin-bottom: 48px;
 }
 
-/* === LINHA DECORATIVA === */
+ === LINHA DECORADA === 
 .linha-deco {
   display: flex;
   align-items: center;
@@ -310,7 +310,7 @@ section {
   color: var(--verde-claro);
 }
 
-/* === CARDS DESTINOS === */
+=== CARDS DESTINOS === 
 .grid-destinos {
   display: flex;
   flex-wrap: wrap;
@@ -410,7 +410,7 @@ section {
   gap: 8px;
 }
 
-/* === SEÇÃO MAPA / BANNERS === */
+=== SEÇÃO MAPA / BANNERS ===
 .secao-faixa {
   background: linear-gradient(135deg, var(--verde) 0%, var(--azul) 100%);
   padding: 80px 0;
@@ -487,7 +487,7 @@ section {
   border: none;
 }
 
-/* === CARDS GASTRONOMIA === */
+ === CARDS GASTRONOMIA === 
 .grid-gastro {
   display: flex;
   flex-wrap: wrap;
@@ -550,7 +550,7 @@ section {
   line-height: 1.6;
 }
 
-/* === ASIDE === */
+ === ASIDE === 
 aside {
   background: linear-gradient(160deg, #f0faf4, #e8f4fd);
   border-left: 4px solid var(--verde-claro);
@@ -590,7 +590,7 @@ aside {
   margin-top: 2px;
 }
 
-/* === LAYOUT COM ASIDE === */
+ === LAYOUT COM ASIDE === 
 .layout-conteudo {
   display: flex;
   gap: 40px;
@@ -637,65 +637,7 @@ aside {
   font-weight: 600;
 }
 
-/* === GALERIA === */
-.galeria-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 16px;
-}
-
-.galeria-item {
-  border-radius: var(--radius);
-  overflow: hidden;
-  aspect-ratio: 4/3;
-  box-shadow: var(--sombra);
-}
-
-.galeria-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.galeria-item:hover img {
-  transform: scale(1.05);
-}
-
-/* === HERO PÁGINAS INTERNAS === */
-.hero-interno {
-  background: linear-gradient(135deg, var(--verde) 0%, var(--azul) 100%);
-  padding: 80px 0 60px;
-  text-align: center;
-  color: var(--branco);
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-interno::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  background: var(--creme);
-  clip-path: ellipse(55% 100% at 50% 100%);
-}
-
-.hero-interno .hero-titulo {
-  font-size: clamp(1.8rem, 4vw, 3rem);
-  margin-bottom: 12px;
-}
-
-.hero-interno .hero-subtitulo {
-  font-size: 1rem;
-  color: rgba(255,255,255,0.8);
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-/* === PÁGINA DESTINOS === */
+ === PÁGINA DESTINOS === 
 .bg-creme {
   background-color: var(--creme);
 }
@@ -775,7 +717,7 @@ aside {
   box-shadow: 0 8px 30px rgba(26,107,58,0.4);
 }
 
-/* === CARDS INFO CONTATO === */
+ === CARDS INFO CONTATO === 
 .grid-contato-info {
   display: flex;
   flex-wrap: wrap;
@@ -941,7 +883,7 @@ footer {
   color: rgba(0,0,0,0.25);
 }
 
-/* === UTILITÁRIOS === */
+ === UTILITÁRIOS === 
 .text-center { text-align: center; }
 .mb-8 { margin-bottom: 8px; }
 .mb-16 { margin-bottom: 16px; }
